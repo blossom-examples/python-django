@@ -69,6 +69,7 @@ WSGI_APPLICATION = 'jokes.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# Default to PostgreSQL for development and production
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -80,10 +81,18 @@ DATABASES = {
     }
 }
 
-# Use DATABASE_URL if provided (for Heroku/Blossom)
+# Use DATABASE_URL if provided (for production)
 if 'DATABASE_URL' in os.environ:
     import dj_database_url
     DATABASES['default'] = dj_database_url.config(conn_max_age=600)
+# Fallback to SQLite if PostgreSQL connection fails
+elif not os.getenv('DB_NAME') or not os.getenv('DB_USER'):
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

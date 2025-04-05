@@ -1,0 +1,122 @@
+[
+  {
+    "model": "jokes_app.joke",
+    "pk": 1,
+    "fields": {
+      "content": "Why don't scientists trust atoms? Because they make up everything!",
+      "author": "Science Enthusiast",
+      "category": "puns",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "jokes_app.joke",
+    "pk": 2,
+    "fields": {
+      "content": "What do you call a fake noodle? An impasta!",
+      "author": "Pasta Lover",
+      "category": "puns",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "jokes_app.joke",
+    "pk": 3,
+    "fields": {
+      "content": "Why did the scarecrow win an award? Because he was outstanding in his field!",
+      "author": "Farm Humor",
+      "category": "dad jokes",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "jokes_app.joke",
+    "pk": 4,
+    "fields": {
+      "content": "What do you call a bear with no teeth? A gummy bear!",
+      "author": "Wildlife Joker",
+      "category": "dad jokes",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "jokes_app.joke",
+    "pk": 5,
+    "fields": {
+      "content": "Knock, knock. Who's there? Lettuce. Lettuce who? Lettuce in, it's cold out here!",
+      "author": "Vegetable Fan",
+      "category": "knock-knock",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "jokes_app.joke",
+    "pk": 6,
+    "fields": {
+      "content": "I'm reading a book on anti-gravity. It's impossible to put down!",
+      "author": "Physics Buff",
+      "category": "one-liners",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "jokes_app.joke",
+    "pk": 7,
+    "fields": {
+      "content": "I used to play piano by ear, but now I use my hands.",
+      "author": "Music Enthusiast",
+      "category": "one-liners",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "jokes_app.joke",
+    "pk": 8,
+    "fields": {
+      "content": "Why don't eggs tell jokes? They'd crack up!",
+      "author": "Breakfast Club",
+      "category": "dad jokes",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "jokes_app.joke",
+    "pk": 9,
+    "fields": {
+      "content": "What do you call a bear with no teeth and no fur? A gummy bear!",
+      "author": "Wildlife Joker",
+      "category": "dad jokes",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  },
+  {
+    "model": "jokes_app.joke",
+    "pk": 10,
+    "fields": {
+      "content": "I'm on a seafood diet. I see food and I eat it!",
+      "author": "Foodie",
+      "category": "one-liners",
+      "likes": 0,
+      "created_at": "2024-04-05T00:00:00Z",
+      "updated_at": "2024-04-05T00:00:00Z"
+    }
+  }
+]
