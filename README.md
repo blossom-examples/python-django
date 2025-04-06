@@ -2,13 +2,6 @@
 
 A ready-to-deploy Django application for managing and displaying jokes. This app is designed to be deployed on [Blossom](https://blossom-cloud.com).
 
-## Features
-
-- View a list of all jokes
-- Add, edit, and delete jokes
-- Get a random joke
-- Categorize jokes
-
 ## Quick Start
 
 ```bash
@@ -37,35 +30,13 @@ Visit `http://localhost:8000` in your browser to see the application.
 
 ## Database Configuration
 
-The application uses PostgreSQL by default. You can configure the database connection using environment variables:
-
-```bash
-export DB_NAME=jokes_dev
-export DB_USER=your_postgres_user
-export DB_PASSWORD=your_postgres_password
-# Optional: DB_HOST and DB_PORT if different from defaults
-```
-
-Or use a `.env` file:
-```
-DB_NAME=jokes_dev
-DB_USER=your_postgres_user
-DB_PASSWORD=your_postgres_password
-```
+The application uses PostgreSQL by default. You can configure the database connection using environment variables or with .env:
 
 For production deployment on Blossom, the `DATABASE_URL` environment variable will be automatically set.
 
-## Deployment
-
-This application is configured for deployment on Blossom. The Procfile includes:
-
-- Web process: Runs the Gunicorn server
-- Release process: Runs migrations and loads initial data
-
 ## Environment Variables
 
-- `DATABASE_URL`: PostgreSQL connection string (for production)
-- `DB_NAME`, `DB_USER`, `DB_PASSWORD`: PostgreSQL connection details
-- `SECRET_KEY`: Django secret key
-- `DEBUG`: Set to False in production
 - `ALLOWED_HOSTS`: Comma-separated list of allowed hosts
+- `DATABASE_URL`: PostgreSQL connection string (for production)
+- `DEBUG`: Set to False in production
+- `SECRET_KEY`: Django secret key
