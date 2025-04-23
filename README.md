@@ -6,6 +6,7 @@ A ready-to-deploy Django application for managing and displaying jokes. This app
 
 ```bash
 # Create and activate virtual environment
+# Note: Only if you're using venv
 python -m venv venv
 source venv/bin/activate  # or `venv/Scripts/activate` on Windows
 source venv/bin/activate.fish  # fish shell
@@ -15,6 +16,8 @@ pip install -r requirements.txt
 
 # Set up the database
 createdb jokes_dev  # Create PostgreSQL database
+# createdb python_django -h 127.0.0.1 -U postgres # Another example
+# You can configure .env
 
 # Run migrations
 python manage.py migrate
